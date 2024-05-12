@@ -1,0 +1,86 @@
+<!-- fetch from web and re-render to web as result -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day-3 task-2</title>
+
+    <!-- linking my CSS file -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- linking my JS file -->
+    <script src="./sciprt.js" defer></script>
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <!-- form starts here -->
+      <form action="#" method="post" class="my-5">
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Name"
+          class="border p-2 border-slate-400 mb-2"
+        />
+        <br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          class="border border-slate-400 p-2 mb-2"
+        />
+        <br />
+        <input
+          type="tel"
+          name="phone-no"
+          id="phone-no"
+          placeholder="phone-no"
+          class="border border-slate-400 p-2 mb-2"
+        />
+        <br />
+        <textarea
+          name="address"
+          id="address"
+          cols="30"
+          rows="5"
+          class="border border-slate-400 p-2 mb-2"
+        >
+Address</textarea
+        >
+        <br />
+        <input type="radio" name="gender" id="gender" checked value="male" />
+        <span>male</span>
+        <input type="radio" name="gender" id="gender" value="female" />
+        <span>female</span>
+        <br />
+        <select
+          name="city"
+          id="city"
+          class="mt-2 border border-slate-400 p-2 mb-2"
+        >
+          <option value="Ahmedabad">Ahmedabad</option>
+          <option value="Vadodra">Vadodra</option>
+          <option value="surat">surat</option>
+          <option value="Dwarka">Dwarka</option>
+        </select>
+        <br />
+        <button
+          type="submit"
+          class="btn mt-2 border-none px-3 py-2 bg-indigo-600 text-white"
+        >
+          Submit
+        </button>
+      </form>
+      <!-- form ends here -->
+
+      <!-- displayer box starts -->
+      <div class="displayer border p-2 flex flex-wrap">
+        
+      </div>
+      <!-- displayer box ends -->
+    </div>
+  </body>
+</html>

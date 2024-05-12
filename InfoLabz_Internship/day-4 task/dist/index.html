@@ -1,0 +1,52 @@
+<!-- Rendering area according to entered Pin-code from API -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day-04 task</title>
+    <!-- linking my CSS file -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- linking mine JS file -->
+    <script src="./script.js" defer></script>
+  </head>
+  <body
+    class="container mx-auto py-5 flex justify-center flex-col items-center gap-20"
+  >
+    <!-- form starts here -->
+    <form action="#" method="post">
+      <input
+        type="text"
+        name="pincode"
+        id="pincode"
+        placeholder="Pincode"
+        class="border p-2 border-slate-400"
+      />
+      <button type="submit" class="bg-indigo-600 p-2 text-white px-3">
+        search
+      </button>
+    </form>
+    <!-- form ends here -->
+
+    <!-- API-data container starts -->
+    <div class="api-container w-full text-center flex justify-center flex-col">
+      <h2 class="text-2xl capitalize pb-2">your data</h2>
+      <hr />
+      <table class="my-5 border border-slate-400">
+        <thead>
+            <tr>
+                <th class="p-2">Sr No.</th>
+                <th class="p-2 text-left">Areas</th>
+                <th class="p-2">District</th>
+                <th class="p-2">Region</th>
+            </tr>
+        </thead>
+        <tbody class="tbody text-center">
+        </tbody>
+      </table>
+    </div>
+    <!-- API-data container ends -->
+  </body>
+</html>
